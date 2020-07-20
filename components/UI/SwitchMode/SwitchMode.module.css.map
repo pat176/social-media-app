@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,WAAW,CAAC;EACV,aAAa,EAAE,GAAG;EAClB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,MAAM,EAAE,CAAC;EACT,UAAU,ECRI,OAAO;EDSrB,KAAK,EAAE,KAAK;EACZ,SAAS,EAAE,IAAI;EACf,OAAO,EAAE,GAAG;EACZ,QAAQ,EAAE,KAAK;EACf,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,OAAO;EACf,UAAU,EAAE,mBAAmB;CAChC;;AACD,AAAA,WAAW,AAAA,MAAM,CAAC;EAChB,UAAU,ECnBI,OAAO,CDmBM,UAAU;CACtC",
+    "sources": [
+        "SwitchMode.scss",
+        "../../../styles/_variables.scss"
+    ],
+    "names": [],
+    "file": "SwitchMode.module.css"
+}

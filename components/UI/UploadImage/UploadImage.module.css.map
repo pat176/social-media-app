@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACT,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;CAId;;AAND,AAGE,UAHQ,CAGR,GAAG,CAAC;EACF,KAAK,EAAE,IAAI;CACZ",
+    "sources": [
+        "UploadImage.scss"
+    ],
+    "names": [],
+    "file": "UploadImage.module.css"
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAC;EACV,MAAM,EAAE,eAAe;CACxB",
+    "sources": [
+        "AddPostForm.scss"
+    ],
+    "names": [],
+    "file": "AddPostForm.module.css"
+}

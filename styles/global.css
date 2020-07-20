@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Oswald";
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+.app-container {
+  width: 100vw;
+  background: url("../public/Oreti.png");
+  background-size: auto 100vh;
+  background-repeat: no-repeat;
+  background-position: right top;
+  overflow: hidden;
+  /* display: flex; */
+}
+
+.dark .app-container {
+  width: 100vw;
+  background: url("../public/Oreti-dark.png");
+  background-size: auto 100vh;
+  background-repeat: no-repeat;
+  background-position: right top;
+  overflow: hidden;
+}
+
+.loginForm {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0px 40px;
+}
+
+@media (max-width: 1136px) {
+  .app-container {
+    background-position: center top;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .dark .app-container {
+    background-position: center top;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .loginForm {
+    margin: 0 auto 0 auto;
+  }
+}
+/*# sourceMappingURL=global.css.map */

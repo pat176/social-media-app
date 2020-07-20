@@ -1,0 +1,21 @@
+.SwitchMode {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  background: #f10344;
+  color: white;
+  font-size: 2rem;
+  z-index: 500;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 2px 3px #333333;
+          box-shadow: 0px 2px 3px #333333;
+}
+
+.SwitchMode:focus {
+  background: #f10344 !important;
+}
+/*# sourceMappingURL=SwitchMode.module.css.map */
