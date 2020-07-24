@@ -104,6 +104,11 @@ const LoginForm = (props) => {
         >
           {mode === "signup" ? "Sign Up" : "Sign In"}
         </button>
+        {mode === "signup" ? (
+          <p className={classes.disclaimer}>
+            By Signing Up, You Agree That You Are Atleast 13 Years Old!
+          </p>
+        ) : null}
         <a
           className={classes.reset__password}
           style={{ display: "block", textAlign: "center" }}

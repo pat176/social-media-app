@@ -15,7 +15,8 @@
 .submitButton {
   margin: 10px auto;
 }
-.changeMode {
+.changeMode,
+.disclaimer {
   text-align: center;
 }
 .modeHandler:hover {

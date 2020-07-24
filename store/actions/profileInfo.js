@@ -6,7 +6,7 @@ import { storage } from "../../firebase";
 
 const initializeProfile = (name, followers, likes, gender, bio, dob, url) => {
   return {
-    type: actions.INITIgenALIZE_PROFILE,
+    type: actions.INITIALIZE_PROFILE,
     bio,
     dob,
     likes,
@@ -25,13 +25,18 @@ const changeGender = (gender, url) => {
 };
 export const genderChangeHandler = (gender) => {
   return (dispatch) => {
-    if (gender !== "female") {
+    if (gender.toLowerCase() !== "female") {
+      console.log(gender.toLowerCase());
+
       getDownloadUrl("male", storage, (url) => {
-        dispatch(changeGender(gender, url));
+        dispatch(changeGender(gender.toLowerCase(), url));
+        console.log(url);
       });
     } else {
+      console.log(gender.toLowerCase());
       getDownloadUrl("female", storage, (url) => {
-        dispatch(changeGender(gender, url));
+        dispatch(changeGender(gender.toLowerCase(), url));
+        console.log(url);
       });
     }
   };
@@ -47,6 +52,7 @@ const updateProfile = (gender, bio, dob) => {
 };
 
 export const updateProfileInfo = (gender, bio, dob, token, userId) => {
+  console.log(gender, bio, dob);
   return (dispatch, getState) => {
     Axios.get(
       "https://social-media-website-13b03.firebaseio.com/users.json?auth=" +
@@ -64,6 +70,7 @@ export const updateProfileInfo = (gender, bio, dob, token, userId) => {
         dob,
         profilePhoto: getState().profileInfo.profilePhoto,
       };
+      console.log(userData);
       Axios.put(
         "https://social-media-website-13b03.firebaseio.com/users.json?auth=" +
           token,
@@ -83,7 +90,6 @@ export const updateProfileInfo = (gender, bio, dob, token, userId) => {
 };
 
 export const initializeProfileAction = (axios) => {
-  console.clear();
   console.log("ITS RUNNING");
   return (dispatch, getState) => {
     console.log("ITS IN RETURN");
